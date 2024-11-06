@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: var(--base-color-brand-white);
+    background-color: var(--base-color-brand-black);
+    font-family: Brockmann Webfont, sans-serif;
+
+}
+
+
+.body{
+    background-color: #191512;
+    cursor: default;
+    
+     
+    
+}
+.menu{
+    width: 176px;
+}
+
+.top-bar-menu{
+    
+        width: 80%;
+        height: 69px;
+        background-color: #151210;
+        border: 1px solid  #3f3630;
+        border-radius: 7px;
+        margin: 25px 135px;
+        display: flex;
+        align-items: center;
+        position: fixed;
+}
+
+.menu img{
+    width: 62%;
+    height: 100%;
+    margin: 20px 33px;
+}
+
+
+.nevbar-menu{
+    display: flex;
+     color: white;
+}
+
+.dropdown{
+    min-width: 8em;
+    position: relative;
+    margin: 0em;
+}
+.dropdown * {
+    box-sizing: border-box;
+}
+.select{
+    background: #151210;
+    color: rgb(252, 254, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px #3f3630 solid; */
+    border-radius: 0.5em;
+    padding: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+
+}
+
+.select-clicked {
+    border: 2px #3f3630 solid;
+    box-shadow: 0 0 0.8em #191512;
+}
+.select:hover{
+    background: #3f3630;
+}
+.caret {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #fff;
+    transition: 0.3s;
+}
+.caret-rotate {
+    transform: rotate(180deg);
+}
+.menu1{
+    list-style: none;
+    padding: 0.2em 0.5em;
+    background: #191512;
+    border: 1px #3f3630 solid;
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+    border-radius: 0.5em;
+    position: absolute;
+    top: 5em;
+    left: 112%;
+    width: 224%;
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
+    transition: 0.2s;
+    z-index: 1;
+}
+
+.menu1 li{
+    padding: 0.7em 0.5em;
+    margin: 0.3em 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+.menu1 li:hover{
+    background: #3f3630;
+}
+.active {
+    background: #191512;
+}
+.menu1-open {
+display: block;
+opacity: 1;
+}
+.menu1.menu1-open {
+    display: block;
+    opacity: 1;
+}
+
+.bell {
+    width: 50px;
+    background-color: #090706;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: 2px solid #3f3630;
+    background: linear-gradient(rgb(6, 5, 5) 0%, rgba(29, 21, 21, 0.295) 100%);
+    position: absolute;
+    left: 60%;
+    top: 19%;
+    transition: transform 0.3s ease;
+}
+
+/* Add the bounce effect on hover */
+.bell:hover {
+    animation: bounce 0.5s ease-in-out;
+}
+
+.bell img {
+    width: 18px;
+    filter: brightness(150%);
+    animation: ringEffect 1s infinite linear;
+}
+@keyframes ringEffect {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(60deg);  /* Rotate halfway */
+    }
+    
+}
+svg {
+    width: 25px;
+    position: relative;
+    right: 18px;
+    top: 3px;
+}
+
+.for-install {
+    width: 200px;
+}
+
+.for-select {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 28px;
+    top: 3px;
+    border-radius: 8px;
+    border: 2px solid #3f3630;
+    background: linear-gradient(rgb(6, 5, 5) 0%, rgba(29, 21, 21, 0.295) 100%);
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+/* Add the bounce effect on hover */
+.for-select:hover {
+    animation: bounce 0.5s ease-in-out;
+}
+
+.for-select a {
+    position: relative;
+    top: 10px;
+}
+
+.for-selected {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    top: -3px;
+}
+
+.for-caret {
+    position: relative;
+    left: 10px;
+}
+
+.for-menu1 {}
+
+.for-active {}
+
+/* Keyframes for the bounce effect */
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    30% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(5px);
+    }
+    70% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.launch-dropdown{
+    position: absolute;
+    top: 11px;
+    /* left: 130px; */
+    right: 14px;
+}
+.for-launch{
+    width: 130px;
+    height: 43px;
+    background-color: #F56629;
+    border: 2px solid #3f3630;
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+.launch-selected{
+
+}
+.launch-caret{
+
+}
+.w{
+    width: 140px;
+    background-color: #151210;
+    border-radius: 8px;
+    border: 2px solid #3f3630;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 61px;
+    /* right: -69px; */
+    left: 620px;
+    height: 41px;
+}
+
+.w img{
+    width: 25px;
+}
+.web{
+    position: relative;
+    top: 100px;
+}
+.flow{
+    font-size: 104px;
+    text-align: center;
+    color: white;
+}
+.con{
+    font-size: 208px;
+    text-align: center;
+    color: #F56629;
+}
+.web p{
+    text-align: center;
+    font-size: 19.2px;
+    color: #fff;
+}
+
+.get-select{
+    width: 177px;
+    position: relative;
+    top: 143px;
+    left: 525px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10px;
+    font-size: 16px;
+}
+.get-selected{
+display: contents;
+}
+.launch-dropdown1{
+
+}
+.for-launch1{
+    position: relative;
+    top: 551px;
+    right: 485px;
+    height: 39px;
+}
+.launch-selected1{
+
+}
+.launch-caret1{
+
+}
+
+.auto-video{
+    width: 90%;
+    border: 10px;
+}
+.container{
+    position: relative;
+    top: 100px;
+}
+.vidieo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 355px;
+}
+.vid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #151210;
+}
