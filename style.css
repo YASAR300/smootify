@@ -25,15 +25,20 @@ body{
 
 .top-bar-menu{
     
-        width: 80%;
-        height: 69px;
-        background-color: #151210;
-        border: 1px solid  #3f3630;
-        border-radius: 7px;
-        margin: 25px 135px;
-        display: flex;
-        align-items: center;
-        position: fixed;
+    width: 80%;
+    height: 69px;
+    background-color: #151210;
+    border: 1px solid #3f3630;
+    border-radius: 7px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 25px; 
+    z-index: 10; 
+    opacity: 1; 
+    left: 150px;   
+
 }
 
 .menu img{
@@ -143,7 +148,6 @@ opacity: 1;
     transition: transform 0.3s ease;
 }
 
-/* Add the bounce effect on hover */
 .bell:hover {
     animation: bounce 0.5s ease-in-out;
 }
@@ -184,10 +188,10 @@ svg {
     border-radius: 8px;
     border: 2px solid #3f3630;
     background: linear-gradient(rgb(6, 5, 5) 0%, rgba(29, 21, 21, 0.295) 100%);
-    transition: transform 0.3s ease; /* Smooth transition */
+    transition: transform 0.3s ease; 
 }
 
-/* Add the bounce effect on hover */
+
 .for-select:hover {
     animation: bounce 0.5s ease-in-out;
 }
@@ -214,7 +218,7 @@ svg {
 
 .for-active {}
 
-/* Keyframes for the bounce effect */
+
 @keyframes bounce {
     0% {
         transform: translateY(0);
@@ -243,7 +247,7 @@ svg {
     height: 43px;
     background-color: #F56629;
     border: 2px solid #3f3630;
-    transition: transform 0.3s ease; /* Smooth transition */
+    transition: transform 0.3s ease; 
 }
 .launch-selected{
 
@@ -333,6 +337,8 @@ display: contents;
     align-items: center;
     position: relative;
     top: 355px;
+    width: 100vw;
+    
 }
 .vid{
     display: flex;
@@ -340,6 +346,12 @@ display: contents;
     align-items: center;
     border-radius: 10px;
     background-color: #151210;
+    width: 95vw;
+    height: 120vh;
+}
+.vid video{
+    width: 90vw;
+    border-radius: 10px;
 }
 .new{
     position: relative;
@@ -503,4 +515,32 @@ color: #030303;
 }
 .product{
     background-color: #FEFFFE;
+    border-radius: 10px;
+
+}
+.content{
+    border-radius: 10px;
+    
+}
+.im{
+    border-radius: 10px;
+}
+.se{
+    border-radius: 10px;
+}
+.product1{
+    width: 390px;
+    /* border: 1px solid white; */
+    margin: 20px 0px;
+    height: 360px;
+    border-radius: 10px;
+    background-color: #151210;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product1 svg{
+    width: 50px;
+    color: white;
+    
 }
