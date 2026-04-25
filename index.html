@@ -4,14 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>First website</title>
+    <title>Smootify - Webflow & Shopify Connected</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="body">
+
+    <!-- ===== NAVBAR ===== -->
     <div class="top-bar-menu">
         <div class="menu">
-            <img src="img/name.png" alt="">
+            <img src="img/name.png" alt="Smootify">
         </div>
         <nav id="nav-top">
             <div class="nevbar-menu">
@@ -21,10 +23,9 @@
                         <div class="caret"></div>
                     </div>
                     <ul class="menu1">
-                        <li>form</li>
-                        <li>there</li>
-                        <li>and</li>
-                        <li>you</li>
+                        <li>Features</li>
+                        <li>Integrations</li>
+                        <li>Changelog</li>
                         <li class="active">Product</li>
                     </ul>
                 </div>
@@ -35,11 +36,9 @@
                     </div>
                     <ul class="menu1">
                         <li class="active">Resources</li>
-                        <li>form</li>
-                        <li>there</li>
-                        <li>and</li>
-                        <li>you</li>
-
+                        <li>Docs</li>
+                        <li>Blog</li>
+                        <li>Tutorials</li>
                     </ul>
                 </div>
                 <div class="dropdown">
@@ -49,202 +48,371 @@
                     </div>
                     <ul class="menu1">
                         <li class="active">Community</li>
-                        <li>form</li>
-                        <li>there</li>
-                        <li>and</li>
-                        <li>you</li>
-
+                        <li>Forum</li>
+                        <li>Discord</li>
+                        <li>Events</li>
                     </ul>
                 </div>
                 <div class="dropdown">
                     <div class="select">
                         <span class="selected">Pricing</span>
-
-                    </div>
-
-                </div>
-                <div class="nevbar-dropdown">
-                    <div class="bell">
-                        <img src="img/bell-icon-Photoroom.png" alt="">
-                    </div>
-                </div>
-                <div class="nevbar-dropdown">
-                    <div class="dropdown for-install">
-                        <div class="select for-select">
-                            <span class="selected for-selected"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 0 0 2.25-2.25V6a2.25 2.25 0 0 0-2.25-2.25H6A2.25 2.25 0 0 0 3.75 6v2.25A2.25 2.25 0 0 0 6 10.5Zm0 9.75h2.25A2.25 2.25 0 0 0 10.5 18v-2.25a2.25 2.25 0 0 0-2.25-2.25H6a2.25 2.25 0 0 0-2.25 2.25V18A2.25 2.25 0 0 0 6 20.25Zm9.75-9.75H18a2.25 2.25 0 0 0 2.25-2.25V6A2.25 2.25 0 0 0 18 3.75h-2.25A2.25 2.25 0 0 0 13.5 6v2.25a2.25 2.25 0 0 0 2.25 2.25Z" />
-                                </svg>
-                                Install Apps</span>
-                            <div class="caret for-caret"></div>
-                        </div>
-                        <ul class="menu1 for-menu1">
-                            <li class="active  for-active">Community</li>
-                            <li>form</li>
-                            <li>there</li>
-                            <li>and</li>
-                            <li>you</li>
-
-                        </ul>
-                    </div>
-                    <div class="dropdown launch-dropdown">
-                        <div class="select for-launch">
-                            <span class="selected launch-selected">Launch</span>
-                            <div class="caret launch-caret"></div>
-                        </div>
-
                     </div>
                 </div>
             </div>
         </nav>
-        <div class="menu">
-
+        <div class="nevbar-dropdown">
+            <div class="bell">
+                <img src="img/bell-icon-Photoroom.png" alt="notifications">
+            </div>
+            <div class="dropdown for-install">
+                <div class="select for-select">
+                    <span class="selected for-selected">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 0 0 2.25-2.25V6a2.25 2.25 0 0 0-2.25-2.25H6A2.25 2.25 0 0 0 3.75 6v2.25A2.25 2.25 0 0 0 6 10.5Zm0 9.75h2.25A2.25 2.25 0 0 0 10.5 18v-2.25a2.25 2.25 0 0 0-2.25-2.25H6a2.25 2.25 0 0 0-2.25 2.25V18A2.25 2.25 0 0 0 6 20.25Zm9.75-9.75H18a2.25 2.25 0 0 0 2.25-2.25V6A2.25 2.25 0 0 0 18 3.75h-2.25A2.25 2.25 0 0 0 13.5 6v2.25a2.25 2.25 0 0 0 2.25 2.25Z" />
+                        </svg>
+                        Install Apps
+                    </span>
+                    <div class="caret for-caret"></div>
+                </div>
+                <ul class="menu1 for-menu1">
+                    <li class="active for-active">Webflow</li>
+                    <li>Shopify</li>
+                    <li>Chrome</li>
+                </ul>
+            </div>
+            <div class="dropdown launch-dropdown">
+                <div class="select for-launch">
+                    <span class="selected launch-selected">Launch</span>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="container">
 
+    <!-- ===== HERO SECTION ===== -->
+    <div class="container">
         <div class="w">
-            <img src="img/66cdcc2601293b225a9bcbab_66cc7a309460649e7a447ac4_6655e0ab143fd6bc0e39569d_webflow-icon.png"
-                alt="" class="ww">
+            <img src="img/66cdcc2601293b225a9bcbab_66cc7a309460649e7a447ac4_6655e0ab143fd6bc0e39569d_webflow-icon.png" alt="" class="ww">
             <img src="img/infinity-svgrepo-com.png" alt="" class="in">
             <img src="img/images_q=tbn_ANd9GcRAE_p9xI08KkjVwhvtd02CICQ_uWDh0USORQ&s (2).png" alt="" class="s">
         </div>
 
         <div class="web">
-            <h1 class="flow">Webflow & Shopify</h1>
+            <h1 class="flow">Webflow &amp; Shopify</h1>
             <h1 class="con">connected</h1>
             <p>Explore the easiest way to design complex <b>Shopify</b> stores completely within <b>Webflow,</b>
                 assisted by <b>AI</b>
             </p>
         </div>
 
-        <div class="select for-select get-select">
-            <span class="selected for-selected get-selected">
-                Getting Started</span>
-
+        <div class="get-select">
+            <span class="get-selected">Getting Started</span>
         </div>
-        <div class="dropdown launch-dropdown launch-dropdown1">
+        <div class="dropdown launch-dropdown1" style="margin-top:12px;">
             <div class="select for-launch for-launch1">
-                <span class="selected launch-selected launch-selected1">Launch</span>
-                <div class="caret launch-caret launch-caret1"></div>
+                <span class="selected launch-selected1">Launch</span>
+                <div class="caret launch-caret1"></div>
             </div>
-
         </div>
-
     </div>
+
+    <!-- ===== VIDEO SECTION ===== -->
     <div class="vidieo">
         <div class="border">
             <div class="vid">
                 <video class="auto-video" autoplay loop muted>
-                    <source src="img/66c74b953957211a234767e2_66e7f5361965c0ae8138e00b_comp_def_2-transcode.mp4"
-                        type="video/mp4">
+                    <source src="img/66c74b953957211a234767e2_66e7f5361965c0ae8138e00b_comp_def_2-transcode.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
         </div>
     </div>
+
+    <!-- ===== NEW WAY TO SELL ===== -->
     <div class="new">
-        <div class="box">
-            A new way to sell online
-        </div>
+        <div class="box">A new way to sell online</div>
         <h1 class="design">Design is key to boosting sales</h1>
         <p>Design in <b>Webflow.</b> Connect with <b>Smootify.</b> Manage with <b>Shopify.</b></p>
     </div>
+
+    <!-- ===== MAIN GRID (3 cards) ===== -->
     <div class="main-grid">
         <div class="grid">
+
+            <!-- Col 1: Server Sync -->
             <div class="content">
                 <div class="server">
-                 <div class="image">
-                    <img src="img/66d5d1700f68105684e66990_always-sync.png" alt="">
-                 </div>
+                    <div class="image">
+                        <img src="img/66d5d1700f68105684e66990_always-sync.png" alt="">
+                    </div>
                 </div>
                 <div class="server1">
                     <div class="text">
-                 <h4>Server Sync - Always in line</h4>
-                 <p>You can easily import your Shopify <br> data into Webflow and keep your <br>Webflow project always synced with <br>Shopify automatically.</p>
+                        <h4>Server Sync - Always in line</h4>
+                        <p>You can easily import your Shopify data into Webflow and keep your Webflow project always synced with Shopify automatically.</p>
                     </div>
                 </div>
                 <div class="server2">
                     <div class="hq">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 8.25V18a2.25 2.25 0 0 0 2.25 2.25h13.5A2.25 2.25 0 0 0 21 18V8.25m-18 0V6a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 6v2.25m-18 0h18M5.25 6h.008v.008H5.25V6ZM7.5 6h.008v.008H7.5V6Zm2.25 0h.008v.008H9.75V6Z" />
-                      </svg>
-                      <h3>HQ Templates</h3>
-                      <br>
-                      <p>Built by expert Webflow designers <br> and developers to speed up your <br> work.</p>
-                    </div>       
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 8.25V18a2.25 2.25 0 0 0 2.25 2.25h13.5A2.25 2.25 0 0 0 21 18V8.25m-18 0V6a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 6v2.25m-18 0h18M5.25 6h.008v.008H5.25V6ZM7.5 6h.008v.008H7.5V6Zm2.25 0h.008v.008H9.75V6Z" />
+                        </svg>
+                        <h3>HQ Templates</h3>
+                        <p>Built by expert Webflow designers and developers to speed up your work.</p>
+                    </div>
                 </div>
             </div>
+
+            <!-- Col 2: Stay / Connect / Manage -->
             <div class="content content1">
                 <div class="stay">
                     <div class="st">
-                    <img src="img/66cdcc2601293b225a9bcbab_66cc7a309460649e7a447ac4_6655e0ab143fd6bc0e39569d_webflow-icon.png" alt=""> <br>
-                    <br>
-                    <h2>Stay in Webflow
-                    </h2> <br>
-                    <p>Build your store visually within the <br>Webflow designer without any <br> limitations. Publish directly from <br> Webflow and make any design <br> change in no time.</p>
+                        <img src="img/66cdcc2601293b225a9bcbab_66cc7a309460649e7a447ac4_6655e0ab143fd6bc0e39569d_webflow-icon.png" alt="">
+                        <h2>Stay in Webflow</h2>
+                        <p>Build your store visually within the Webflow designer without any limitations. Publish directly from Webflow and make any design change in no time.</p>
                     </div>
                 </div>
                 <div class="stay stay1">
-                   <div class="st">
-                    <img src="img/assets/asset 4.svg" alt="">
-                    <br>
-                    <br>
-                    <h2>Connect with Smootify
-
-                    </h2> <br>
-                    <p>Connect Webflow to Shopify with <br> no need to export code or launch <br> any conversion.
-
-                    </p>
-                   </div>
+                    <div class="st">
+                        <img src="img/assets/asset 4.svg" alt="">
+                        <h2>Connect with Smootify</h2>
+                        <p>Connect Webflow to Shopify with no need to export code or launch any conversion.</p>
+                    </div>
                 </div>
                 <div class="stay stay2">
                     <div class="st">
-                        <img src="img/images_q=tbn_ANd9GcRAE_p9xI08KkjVwhvtd02CICQ_uWDh0USORQ&s.png" alt=""> <br>
-                        <br>
-                        <h2>Manage with Shopify
-
-                        </h2> <br>
-                        <p>Manage with Shopify's built-in <br> solutions for order management, <br> products, customers, emails, <br> discounts, shipping labels and <br> more...
-
-                        </p>
-                        </div>
+                        <img src="img/images_q=tbn_ANd9GcRAE_p9xI08KkjVwhvtd02CICQ_uWDh0USORQ&s.png" alt="">
+                        <h2>Manage with Shopify</h2>
+                        <p>Manage with Shopify's built-in solutions for order management, products, customers, emails, discounts, shipping labels and more...</p>
+                    </div>
                 </div>
             </div>
+
+            <!-- Col 3: Product showcase -->
             <div class="content">
                 <div class="product">
                     <div class="server se">
                         <div class="image im">
-                            <video width="640" height="360" autoplay muted loop>
+                            <video autoplay muted loop>
                                 <source src="img/66435d63b6cf21e57048a85c_66c888dcdebb7914cf15090e_bottle_blu_compressed_1-transcode.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
                             </video>
                         </div>
-                       </div>
-                       <div class="server1 ser">
-                           <div class="text te">
-                        <h4 style="color: black;">Server Sync - Always in line</h4>
-                        <p style="color: rgba(0, 0, 0, 0.897);">Discover how many striking things <br> you can do with the power of <br> Webflow & Shopify in your hands.</p>
-                           </div>
-                       </div>
+                        <div class="server1 ser">
+                            <div class="text te">
+                                <h4>Product Showcase</h4>
+                                <p>Discover how many striking things you can do with the power of Webflow &amp; Shopify in your hands.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="product1">
-                    <div class="st st-p">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 6.087c0-.355.186-.676.401-.959.221-.29.349-.634.349-1.003 0-1.036-1.007-1.875-2.25-1.875s-2.25.84-2.25 1.875c0 .369.128.713.349 1.003.215.283.401.604.401.959v0a.64.64 0 0 1-.657.643 48.39 48.39 0 0 1-4.163-.3c.186 1.613.293 3.25.315 4.907a.656.656 0 0 1-.658.663v0c-.355 0-.676-.186-.959-.401a1.647 1.647 0 0 0-1.003-.349c-1.036 0-1.875 1.007-1.875 2.25s.84 2.25 1.875 2.25c.369 0 .713-.128 1.003-.349.283-.215.604-.401.959-.401v0c.31 0 .555.26.532.57a48.039 48.039 0 0 1-.642 5.056c1.518.19 3.058.309 4.616.354a.64.64 0 0 0 .657-.643v0c0-.355-.186-.676-.401-.959a1.647 1.647 0 0 1-.349-1.003c0-1.035 1.008-1.875 2.25-1.875 1.243 0 2.25.84 2.25 1.875 0 .369-.128.713-.349 1.003-.215.283-.4.604-.4.959v0c0 .333.277.599.61.58a48.1 48.1 0 0 0 5.427-.63 48.05 48.05 0 0 0 .582-4.717.532.532 0 0 0-.533-.57v0c-.355 0-.676.186-.959.401-.29.221-.634.349-1.003.349-1.035 0-1.875-1.007-1.875-2.25s.84-2.25 1.875-2.25c.37 0 .713.128 1.003.349.283.215.604.401.96.401v0a.656.656 0 0 0 .658-.663 48.422 48.422 0 0 0-.37-5.36c-1.886.342-3.81.574-5.766.689a.578.578 0 0 1-.61-.58v0Z" />
-                          </svg>
-                          <br>
-                        <br>
-                        <h2>Premium add-ons
-                        </h2> <br>
-                        <p>Discover the list of Shopify app fully <br> integrated with Smootify. </p>
-                        </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 6.087c0-.355.186-.676.401-.959.221-.29.349-.634.349-1.003 0-1.036-1.007-1.875-2.25-1.875s-2.25.84-2.25 1.875c0 .369.128.713.349 1.003.215.283.401.604.401.959v0a.64.64 0 0 1-.657.643 48.39 48.39 0 0 1-4.163-.3c.186 1.613.293 3.25.315 4.907a.656.656 0 0 1-.658.663v0c-.355 0-.676-.186-.959-.401a1.647 1.647 0 0 0-1.003-.349c-1.036 0-1.875 1.007-1.875 2.25s.84 2.25 1.875 2.25c.369 0 .713-.128 1.003-.349.283-.215.604-.401.959-.401v0c.31 0 .555.26.532.57a48.039 48.039 0 0 1-.642 5.056c1.518.19 3.058.309 4.616.354a.64.64 0 0 0 .657-.643v0c0-.355-.186-.676-.401-.959a1.647 1.647 0 0 1-.349-1.003c0-1.035 1.008-1.875 2.25-1.875 1.243 0 2.25.84 2.25 1.875 0 .369-.128.713-.349 1.003-.215.283-.4.604-.4.959v0c0 .333.277.599.61.58a48.1 48.1 0 0 0 5.427-.63 48.05 48.05 0 0 0 .582-4.717.532.532 0 0 0-.533-.57v0c-.355 0-.676.186-.959.401-.29.221-.634.349-1.003.349-1.035 0-1.875-1.007-1.875-2.25s.84-2.25 1.875-2.25c.37 0 .713.128 1.003.349.283.215.604.401.96.401v0a.656.656 0 0 0 .658-.663 48.422 48.422 0 0 0-.37-5.36c-1.886.342-3.81.574-5.766.689a.578.578 0 0 1-.61-.58v0Z" />
+                    </svg>
+                    <h2>Premium add-ons</h2>
+                    <p>Discover the list of Shopify apps fully integrated with Smootify.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ===== BUILD A SMOOTIFY STORE ===== -->
+    <div class="feature-section">
+        <div class="feature-label">✦ Build a smootify store</div>
+        <h2>Just Simple Steps</h2>
+        <p>Get started with Smootify in minutes and start selling online with Webflow & Shopify.</p>
+        <div class="feature-row">
+            <div class="feature-card">
+                <div class="feature-card-img">
+                    <video autoplay muted loop>
+                        <source src="img/66c74b953957211a234767e2_66e7f5361965c0ae8138e00b_comp_def_2-transcode.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="feature-card-body">
+                    <h4>01 — Connect Webflow</h4>
+                    <p>Link your Webflow project to Smootify in a single click.</p>
+                </div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-card-img">
+                    <img src="img/66d5d1700f68105684e66990_always-sync.png" alt="">
+                </div>
+                <div class="feature-card-body">
+                    <h4>02 — Sync Shopify Data</h4>
+                    <p>Import your products, collections and customers automatically.</p>
+                </div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-card-img">
+                    <video autoplay muted loop>
+                        <source src="img/66435d63b6cf21e57048a85c_66c888dcdebb7914cf15090e_bottle_blu_compressed_1-transcode.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="feature-card-body">
+                    <h4>03 — Publish & Sell</h4>
+                    <p>Publish from Webflow and start selling with Shopify's commerce engine.</p>
                 </div>
             </div>
         </div>
     </div>
-    
+
+    <!-- ===== BUSINESS SECTION ===== -->
+    <div class="feature-section">
+        <div class="feature-label">✦ Business Just got simpler</div>
+        <h2>Make Smootify Yours</h2>
+        <p>Powerful tools to help you design, manage and grow your Shopify store inside Webflow.</p>
+        <div class="feature-row">
+            <div class="feature-card">
+                <div class="feature-card-img">
+                    <img src="img/66d5d1700f68105684e66990_always-sync.png" alt="">
+                </div>
+                <div class="feature-card-body">
+                    <h4>AI-Assisted Design</h4>
+                    <p>Let AI help you design your store with smart suggestions and layouts.</p>
+                </div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-card-img">
+                    <video autoplay muted loop>
+                        <source src="img/66435d63b6cf21e57048a85c_66c888dcdebb7914cf15090e_bottle_blu_compressed_1-transcode.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="feature-card-body">
+                    <h4>Real-time Sync</h4>
+                    <p>Your Webflow site stays in sync with Shopify automatically — always.</p>
+                </div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-card-img">
+                    <img src="img/66d5d1700f68105684e66990_always-sync.png" alt="">
+                </div>
+                <div class="feature-card-body">
+                    <h4>One-Click Publish</h4>
+                    <p>No code export, no conversion — publish directly from Webflow.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== FAQ SECTION ===== -->
+    <div class="faq-section">
+        <h2>Why should you use Smootify?</h2>
+        <p>Everything you need to know about connecting Webflow and Shopify.</p>
+        <div class="faq-item">
+            <h4>What is Smootify?</h4>
+            <span class="faq-plus">+</span>
+        </div>
+        <div class="faq-item">
+            <h4>Do I need to know how to code?</h4>
+            <span class="faq-plus">+</span>
+        </div>
+        <div class="faq-item">
+            <h4>How does the Webflow + Shopify connection work?</h4>
+            <span class="faq-plus">+</span>
+        </div>
+        <div class="faq-item">
+            <h4>Can I use my existing Webflow project?</h4>
+            <span class="faq-plus">+</span>
+        </div>
+        <div class="faq-item">
+            <h4>Is Smootify compatible with all Shopify plans?</h4>
+            <span class="faq-plus">+</span>
+        </div>
+        <div class="faq-item">
+            <h4>What happens if I update my Webflow design?</h4>
+            <span class="faq-plus">+</span>
+        </div>
+    </div>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <div class="testimonials-section">
+        <h2>As told by those who run it...</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <p>"Smootify completely changed how I build Shopify stores. I never have to leave Webflow anymore — it's magical."</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">A</div>
+                    <div>
+                        <div class="testimonial-name">Alex M.</div>
+                        <div class="testimonial-role">Webflow Designer</div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <p>"The sync is incredibly fast. My client's Shopify products appear in Webflow instantly. Zero headache."</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">S</div>
+                    <div>
+                        <div class="testimonial-name">Sara K.</div>
+                        <div class="testimonial-role">E-commerce Developer</div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <p>"I've tried every Webflow-Shopify solution out there. Smootify is the only one that actually works seamlessly."</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">J</div>
+                    <div>
+                        <div class="testimonial-name">James T.</div>
+                        <div class="testimonial-role">Agency Owner</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== CTA BANNER ===== -->
+    <div class="cta-banner">
+        <div class="cta-inner">
+            <div>
+                <h2>Ready to connect?</h2>
+                <p>Start your free trial today. No credit card required.</p>
+            </div>
+            <button class="cta-btn">Get Started Free</button>
+        </div>
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <img src="img/name.png" alt="Smootify" style="width:80px;">
+                <p>The easiest way to connect Webflow and Shopify, powered by AI.</p>
+            </div>
+            <div class="footer-col">
+                <h5>Product</h5>
+                <ul>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Changelog</a></li>
+                    <li><a href="#">Roadmap</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>Resources</h5>
+                <ul>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Tutorials</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>Company</h5>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2024 Smootify. All rights reserved.</span>
+            <span>Made with ♥ for Webflow designers</span>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 
